@@ -69,5 +69,16 @@ div.allEmoBtns {
   text-decoration: none;
 }
 
-/* Add hover and active*/
-/*Remove underline*/
+/* Pos Form*/
+#output {
+  text-align: center;
+  border-style: solid;
+  height: 200px;
+  width: 500px;
+  border-color: black;
+  background-color: rgb(243, 186, 215);
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 25px;
+}
+

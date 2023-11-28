@@ -4,11 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yay!</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1>Yay! What made you feel that way today!?</h1>
-    <input type="text" name="reasoning" />
-    <!--Form submission-->
-    <!--After form submit message-->
+    <form class="mb-4 flex flex-wrap justify-between" id="form">
+  
+       
+      <div class="flex flex-col w-full mb-4">
+        <label class="field-label" for="email">Name</label>
+        <input class="bg-green-100 px-2 py-1 outline-none" type="text" name="Name" id="email">
+      </div>
+      <div class="flex flex-col w-full mb-4">
+        <label class="field-label" for="password">Message</label>
+        <textarea class="bg-green-100 px-2 py-1 outline-none" type="text" name="Message" id="Message"></textarea>
+      </div>
+
+
+      <input type="date" name="Time" id="">
+      <input type="checkbox" name="Check" value="true" id="">
+      <button class="bg-orange-300 px-3 py-1 text-white mx-auto" type="submit" id="submit">Submit</button>
+    </form>
+    <script src="pos_response.js"></script>
   </body>
 </html>
