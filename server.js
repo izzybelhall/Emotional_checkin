@@ -1,15 +1,14 @@
-//SDK Integration
+const express = require('express');
 const { auth } = require('express-openid-connect');
 
-const express = require('express');
 const app = express();
 
 const config = {
   authRequired: false,
   auth0Logout: true,
-  secret: 'a long, randomly-generated string stored in env',
-  baseURL: 'https://izzybelhall.github.io/Emotional_checkin/',
-  clientID: 'ey3hd7sV0pLzyq5W28qOHrqTWoVpXnwO',
+  secret: `${process.env.secret}`,
+  baseURL: 'https://izzybelhall.github.io/emotional_checkin/',
+  clientID: '5R1xHeMddgJ6MpNjqwml0nFk5egOVJYo',
   issuerBaseURL: 'https://dev-5zqz1l5bzwzgsdp2.us.auth0.com'
 };
 
@@ -20,12 +19,4 @@ app.use(auth(config));
 app.get('/', (req, res) => {
   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
-
-//User Profile
-const { requiresAuth } = require('express-openid-connect');
-
-app.get('/profile', requiresAuth(), (req, res) => {
-  res.send(JSON.stringify(req.oidc.user));
-});
-
 

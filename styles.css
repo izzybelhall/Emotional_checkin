@@ -1,73 +1,73 @@
 /* Emotion Buttons */
 body {
-    background-color: blanchedalmond;
-  }
-  .emoBtn {
-    text-align: center;
-    border-style: solid;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border-color: black;
-    text-decoration: none;
-    font-family: Verdana;
-    font-size: 25px;
-  }
-  h1 {
-    display: flex;
-    justify-content: center;
-    font-family: Verdana;
-  }
-  h2 {
-    display: flex;
-    justify-content: center;
-    font-family: Verdana;
-  }
-  #hapBtn {
-    background-color: yellow;
-  }
-  #sadBtn {
-    background-color: rgb(138, 138, 223);
-  }
-  #annBtn {
-    background-color: orange;
-  }
-  #excBtn {
-    background-color: rgb(255, 100, 126);
-  }
-  #proBtn {
-    background-color: green;
-  }
-  #relBtn {
-    background-color: rgb(180, 251, 251);
-  }
-  #focBtn {
-    background-color: darkorchid;
-  }
-  #silBtn {
-    background-color: rgb(239, 82, 182);
-  }
-  #borBtn {
-    background-color: saddlebrown;
-  }
-  #sicBtn {
-    background-color: greenyellow;
-  }
-  #tirBtn {
-    background-color: rgb(211, 207, 207);
-  }
-  #angBtn {
-    background-color: red;
-  }
-  #worBtn {
-    background-color: lightseagreen;
-  }
-  div.allEmoBtns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-decoration: none;
-  }
-  
-  /* Add hover and active*/
-  /*Remove underline*/
+  background-color: blanchedalmond;
+}
+.emoBtn {
+  text-align: center;
+  border-style: solid;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border-color: black;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 25px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana;
+}
+#hapBtn {
+  background-color: yellow;
+}
+#sadBtn {
+  background-color: rgb(138, 138, 223);
+}
+#annBtn {
+  background-color: orange;
+}
+#excBtn {
+  background-color: rgb(255, 100, 126);
+}
+#proBtn {
+  background-color: green;
+}
+#relBtn {
+  background-color: rgb(180, 251, 251);
+}
+#focBtn {
+  background-color: darkorchid;
+}
+#silBtn {
+  background-color: rgb(239, 82, 182);
+}
+#borBtn {
+  background-color: saddlebrown;
+}
+#sicBtn {
+  background-color: greenyellow;
+}
+#tirBtn {
+  background-color: rgb(211, 207, 207);
+}
+#angBtn {
+  background-color: red;
+}
+#worBtn {
+  background-color: lightseagreen;
+}
+div.allEmoBtns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Add hover and active*/
+/*Remove underline*/
