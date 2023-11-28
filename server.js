@@ -8,7 +8,7 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: 'a long, randomly-generated string stored in env',
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://izzybelhall.github.io/Emotional_checkin/',
   clientID: 'ey3hd7sV0pLzyq5W28qOHrqTWoVpXnwO',
   issuerBaseURL: 'https://dev-5zqz1l5bzwzgsdp2.us.auth0.com'
 };
