@@ -7,7 +7,7 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: `${process.env.secret}`,
-  baseURL: 'https://izzybelhall.github.io/emotional_checkin/',
+  baseURL: 'https://izzybelhall.github.io/Emotional_checkin/',
   clientID: '5R1xHeMddgJ6MpNjqwml0nFk5egOVJYo',
   issuerBaseURL: 'https://dev-5zqz1l5bzwzgsdp2.us.auth0.com'
 };
