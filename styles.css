@@ -17,6 +17,7 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: Verdana;
+  text-align: center;
 }
 h2 {
   display: flex;
@@ -69,17 +70,23 @@ div.allEmoBtns {
   text-decoration: none;
 }
 
-/* Pos Form*/
-#nameLabel{
-  font-size: 25px;
-  font-family: Verdana;
+/* Positive Form*/
+#nameBox {
+  display: flex;
+  justify-content: center;
 }
+
+#textBox {
+  display: flex;
+  justify-content: center;
+}
+
 #myName {
   display: flex;
   justify-content: center;
   font-family: Verdana;
   text-align: center;
-  border-style:dashed;
+  border-style: dashed;
   height: 50px;
   width: 200px;
   border-color: gray;
@@ -105,14 +112,71 @@ div.allEmoBtns {
 #submit {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: Verdana;
-  text-align: left;
+  text-align: center;
   border-style: solid;
-  height: 20px;
+  height: 50px;
   width: 50px;
+  border-radius: 50%;
   border-color: rgb(255, 255, 255);
   background-color: rgb(155, 185, 202);
   text-decoration: none;
   font-size: 10px;
 }
 
+#cCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana;
+}
+
+#limit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+#unsplashImage {
+  display: flex;
+  justify-content: center;
+  max-height: 500px;
+  border: 20px solid black;
+  transform: rotate(3deg);
+}
+
+/*Negative Selection*/
+#yesNoBtns {
+  display: flex;
+  justify-content: center;
+}
+#yesBtn {
+  text-align: center;
+  border-style: solid;
+  height: 100px;
+  width: 100px;
+  border-radius: 30%;
+  border-color: black;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 25px;
+  background-color: rgb(142, 209, 142);
+}
+#noBtn {
+  text-align: center;
+  border-style: solid;
+  height: 100px;
+  width: 100px;
+  border-radius: 30%;
+  border-color: black;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 25px;
+  background-color: rgb(235, 67, 67);
+}

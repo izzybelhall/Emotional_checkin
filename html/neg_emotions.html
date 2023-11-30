@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Negative feelings?</title>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <h1>Oh no! Would you like to talk about how you feel?</h1>
-    <button id="yesBtn">Yes</button>
-    <button id="negNo"><a href="">No</a></button> 
+    <div id="yesNoBtns">
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn"><a href="">No</a></button>
+    </div>
   </body>
-<!--yes alert button-->
+  <!--yes alert button-->
   <script>
     const yesBtn = document.getElementById("yesBtn");
     function clickAlert() {
-      alert("The teacher has been notified, you may close the browser");
+      alert("The teacher has been notified, you may close this page");
     }
     yesBtn.addEventListener("click", clickAlert);
   </script>

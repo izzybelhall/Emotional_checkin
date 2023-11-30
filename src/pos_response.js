@@ -9,7 +9,10 @@ form.addEventListener("submit", (e) => {
   let requestBody = new FormData(form);
   fetch(scriptURL, { method: "POST", body: requestBody })
     .then((response) => {
-      alert("Success!", response);
+      alert(
+        "Your response has been recorded. You may close this page",
+        response
+      );
       submitButton.disabled = false;
     })
     .catch((error) => {

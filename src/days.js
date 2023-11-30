@@ -9,23 +9,27 @@ let summerDate = new Date(summerYear, 5, 20);
 let dayMilliseconds = 1000 * 60 * 60 * 24;
 
 let remainingDays = Math.ceil(
-  (summerDate.getTime() - today.getTime()) /
-   (dayMilliseconds)
+  (summerDate.getTime() - today.getTime()) / dayMilliseconds
 );
 
 let remainingHours = Math.ceil(
-    (summerDate.getTime() - today.getTime()) /
-(1000*60*60)
+  (summerDate.getTime() - today.getTime()) / (1000 * 60 * 60)
 );
 
 let remainingMinutes = Math.ceil(
-    (summerDate.getTime() - today.getTime()) /
-(1000*60)
+  (summerDate.getTime() - today.getTime()) / (1000 * 60)
 );
 
 let remainingSeconds = Math.ceil(
-    (summerDate.getTime() - today.getTime()) /
-(1000)
+  (summerDate.getTime() - today.getTime()) / 1000
 );
 
-document.write("There are " + remainingDays + " days, " + remainingHours + " hours and " + remainingMinutes + " minutes until Summer Break!");
+document.write(
+  "There are " +
+    remainingDays +
+    " days, " +
+    remainingHours +
+    " hours and " +
+    remainingMinutes +
+    " minutes until Summer Break!"
+);

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yay!</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1>Yay! What made you feel that way today!?</h1>
+    <form id="form">
+      <div id="nameBox">
+        <input
+          type="text"
+          name="Name"
+          id="myName"
+          autocomplete="name"
+          placeholder="NAME"
+        />
+      </div>
+      <div id="textBox">
+        <textarea
+          name="Message"
+          type="text"
+          id="message"
+          maxlength="70"
+          placeholder="What made me feel this way today was..."
+        ></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+    <div id="cCount">
+      <span>Character Count</span>
+    </div>
+    <p id="limit">/70</p>
+    <div class="imageContainer">
+      <a id="imageLink" href="#">
+        <img alt="" id="unsplashImage" />
+      </a>
+    </div>
+    <p class="imageDetails">
+      Photo by <a id="creator" href="#">NAME</a> on
+      <a href="https://www.unsplash.com">Unsplash</a>!
+    </p>
+    <script src="/src/pos_response.js"></script>
+    <script src="/src/word_count.js"></script>
+    <script src="/src/image.js"></script>
+  </body>
+</html>
