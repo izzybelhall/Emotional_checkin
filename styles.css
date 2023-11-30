@@ -70,15 +70,49 @@ div.allEmoBtns {
 }
 
 /* Pos Form*/
-#output {
+#nameLabel{
+  font-size: 25px;
+  font-family: Verdana;
+}
+#myName {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana;
   text-align: center;
+  border-style:dashed;
+  height: 50px;
+  width: 200px;
+  border-color: gray;
+  background-color: rgb(186, 233, 243);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#message {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana;
+  text-align: left;
   border-style: solid;
   height: 200px;
   width: 500px;
-  border-color: black;
+  border-color: gray;
   background-color: rgb(243, 186, 215);
   text-decoration: none;
-  font-family: Verdana;
   font-size: 25px;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana;
+  text-align: left;
+  border-style: solid;
+  height: 20px;
+  width: 50px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(155, 185, 202);
+  text-decoration: none;
+  font-size: 10px;
 }
 
