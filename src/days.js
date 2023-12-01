@@ -20,10 +20,6 @@ let remainingMinutes = Math.ceil(
   (summerDate.getTime() - today.getTime()) / (1000 * 60)
 );
 
-let remainingSeconds = Math.ceil(
-  (summerDate.getTime() - today.getTime()) / 1000
-);
-
 document.write(
   "There are " +
     remainingDays +
