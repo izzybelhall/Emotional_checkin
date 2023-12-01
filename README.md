@@ -38,7 +38,7 @@ Create a form and store the submitted values using an external API (e.g. a conta
 ---
 # Installation
 1. clone repository 
-2. Open using vscode live server or similar extension 
+2. Open index.html using vscode live server or similar extension 
 3. Insert api key as the value of the clientId variable (line 1 of /src/image.js) found in the google project turn in comments. 
 - You will know api is working when you see an image of kids on the positive_emotions.html page.
 (*Project will be updated after due date to include api key as an environmental variable*)
