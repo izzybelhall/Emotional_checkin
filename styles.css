@@ -1,23 +1,96 @@
 /* Emotion Buttons */
 body {
-  background-color: blanchedalmond;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 .emoBtn {
-  text-align: center;
-  border-style: solid;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border: 0;
+  border-radius: 50%;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #0f0202;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: American Typewriter, serif;
   height: 200px;
   width: 200px;
-  border-radius: 50%;
-  border-color: black;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
   text-decoration: none;
-  font-family: Verdana;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
   font-size: 25px;
+  display: flex;
 }
+
+.emoBtn:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.emoBtn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.emoBtn:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
 h1 {
   display: flex;
   justify-content: center;
   font-family: Verdana;
   text-align: center;
+
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #352b59 0%,
+    #bc87f4 29%,
+    #f6558a 67%,
+    #f5a6e5 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 h2 {
   display: flex;
@@ -25,43 +98,95 @@ h2 {
   font-family: Verdana;
 }
 #hapBtn {
-  background-color: yellow;
+  background: radial-gradient(
+    circle,
+    rgb(234, 172, 143) 0%,
+    rgb(245, 245, 76) 100%
+  );
 }
 #sadBtn {
-  background-color: rgb(138, 138, 223);
+  background: radial-gradient(
+    circle,
+    rgba(174, 232, 238, 1) 0%,
+    rgba(69, 110, 191, 1) 100%
+  );
 }
 #annBtn {
-  background-color: orange;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 234, 1) 0%,
+    rgba(191, 69, 145, 1) 100%
+  );
 }
 #excBtn {
-  background-color: rgb(255, 100, 126);
+  background: radial-gradient(
+    circle,
+    rgba(255, 245, 25, 1) 0%,
+    rgb(231, 107, 12) 100%
+  );
 }
 #proBtn {
-  background-color: green;
+  background: radial-gradient(
+    circle,
+    rgba(70, 136, 227, 1) 0%,
+    rgba(222, 99, 227, 1) 100%
+  );
 }
 #relBtn {
-  background-color: rgb(180, 251, 251);
+  background: radial-gradient(
+    circle,
+    rgb(156, 207, 132) 0%,
+    rgb(158, 230, 228) 100%
+  );
 }
 #focBtn {
-  background-color: darkorchid;
+  background: radial-gradient(
+    circle,
+    rgba(254, 172, 180, 1) 0%,
+    rgb(62, 71, 61) 100%
+  );
 }
 #silBtn {
-  background-color: rgb(239, 82, 182);
+  background: radial-gradient(
+    circle,
+    rgba(190, 84, 245, 1) 0%,
+    rgba(231, 242, 4, 1) 100%
+  );
 }
 #borBtn {
-  background-color: saddlebrown;
+  background: radial-gradient(
+    circle,
+    rgba(245, 154, 84, 1) 0%,
+    rgba(102, 62, 10, 1) 100%
+  );
 }
 #sicBtn {
-  background-color: greenyellow;
+  background: radial-gradient(
+    circle,
+    rgba(245, 200, 84, 1) 0%,
+    rgba(20, 102, 10, 1) 100%
+  );
 }
 #tirBtn {
-  background-color: rgb(211, 207, 207);
+  background: radial-gradient(
+    circle,
+    rgb(100, 155, 162) 0%,
+    rgb(104, 55, 105) 100%
+  );
 }
 #angBtn {
-  background-color: red;
+  background: radial-gradient(
+    circle,
+    rgba(233, 96, 61, 1) 0%,
+    rgba(203, 30, 36, 1) 100%
+  );
 }
 #worBtn {
-  background-color: lightseagreen;
+  background: radial-gradient(
+    circle,
+    rgba(71, 233, 61, 1) 0%,
+    rgba(30, 100, 203, 1) 100%
+  );
 }
 div.allEmoBtns {
   display: flex;
@@ -71,6 +196,7 @@ div.allEmoBtns {
 }
 
 /* Positive Form*/
+
 #nameBox {
   display: flex;
   justify-content: center;
@@ -86,13 +212,17 @@ div.allEmoBtns {
   justify-content: center;
   font-family: Verdana;
   text-align: center;
-  border-style: dashed;
   height: 50px;
   width: 200px;
-  border-color: gray;
-  background-color: rgb(186, 233, 243);
   text-decoration: none;
   font-size: 15px;
+  padding: 0.5rem;
+  border: double 3px transparent;
+  border-radius: 6px;
+  background-image: linear-gradient(white, gray),
+    linear-gradient(to right, rgb(229, 205, 161), rgb(151, 233, 178));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 #message {
@@ -100,13 +230,17 @@ div.allEmoBtns {
   justify-content: center;
   font-family: Verdana;
   text-align: left;
-  border-style: solid;
   height: 200px;
   width: 500px;
-  border-color: gray;
-  background-color: rgb(243, 186, 215);
   text-decoration: none;
   font-size: 25px;
+  padding: 0.5rem;
+  border: double 3px transparent;
+  border-radius: 6px;
+  background-image: linear-gradient(white, gray),
+    linear-gradient(to right, rgb(240, 95, 211), rgb(151, 233, 207));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 #submit {
@@ -115,14 +249,46 @@ div.allEmoBtns {
   align-items: center;
   font-family: Verdana;
   text-align: center;
-  border-style: solid;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border-color: rgb(255, 255, 255);
-  background-color: rgb(155, 185, 202);
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
   text-decoration: none;
-  font-size: 10px;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#submit:hover {
+  background-color: #99dcf5;
+  box-shadow: #63b872 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+#submit:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
 }
 
 #cCount {
@@ -147,11 +313,36 @@ div.allEmoBtns {
   display: flex;
   justify-content: center;
   max-height: 500px;
-  border: 20px solid black;
+  border: 20px solid rgb(255, 254, 254);
   transform: rotate(3deg);
 }
 
 /*Negative Selection*/
+#ohNo {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana;
+  text-align: center;
+
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #312d40 0%,
+    #534a9b 29%,
+    #512835 67%,
+    #4e0d41 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+}
 #yesNoBtns {
   display: flex;
   justify-content: center;
@@ -162,11 +353,19 @@ div.allEmoBtns {
   height: 100px;
   width: 100px;
   border-radius: 30%;
-  border-color: black;
+  border-color: rgb(255, 255, 255);
   text-decoration: none;
   font-family: Verdana;
   font-size: 25px;
   background-color: rgb(142, 209, 142);
+}
+#yesBtn:hover {
+  transition: 0.75s ease-in-out;
+  background: #215c4c;
+}
+
+#yesBtn:hover svg {
+  stroke-dashoffset: -480;
 }
 #noBtn {
   text-align: center;
@@ -174,9 +373,17 @@ div.allEmoBtns {
   height: 100px;
   width: 100px;
   border-radius: 30%;
-  border-color: black;
+  border-color: rgb(255, 255, 255);
   text-decoration: none;
   font-family: Verdana;
   font-size: 25px;
-  background-color: rgb(235, 67, 67);
+  background-color: rgb(254, 91, 91);
+}
+#noBtn:hover {
+  transition: 0.75s ease-in-out;
+  background: #4e0a0a;
+}
+
+#noBtn:hover svg {
+  stroke-dashoffset: -480;
 }

@@ -1,6 +1,7 @@
-let clientID = ""; //update to make secure//
-let query = "excited kids";
-let endpoint = `https://api.unsplash.com/photos/random/?client_id=${clientID}&query=${query}`;
+let clientId = "";
+
+let query = "uplifting kids";
+let endpoint = `https://api.unsplash.com/photos/random/?client_id=${clientId}&query=${query}`;
 
 let imageElement = document.querySelector("#unsplashImage");
 let imageLink = document.querySelector("#imageLink");

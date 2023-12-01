@@ -13,6 +13,7 @@ form.addEventListener("submit", (e) => {
         "Your response has been recorded. You may close this page",
         response
       );
+      form.reset();
       submitButton.disabled = false;
     })
     .catch((error) => {
